@@ -85,7 +85,7 @@ RUN pip install mecab-python3 pandas
 
 COPY ./NanumFontSetup_TTF_GOTHIC /src/NanumFontSetup_TTF_GOTHIC
 COPY ./app /src/app/
-COPY ./.env.example /src/.env
+# COPY ./.env.example /src/.env
 
 EXPOSE 2456
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "2456"]
