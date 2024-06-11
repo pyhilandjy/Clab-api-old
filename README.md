@@ -1,16 +1,16 @@
 ## FastAPI
 
-#### 라우터 설명
+### 라우터 설명
 
-##### 유저 관리(users.py)
+#### 유저 관리(users.py)
 - 유저의 목록 반환: /users/ (POST)
 - 로그인 하기 위한 정보 처리: /users/login/ (POST)
 - 로그인한 사용자의 정보를 반환: /users/me/ (GET)
 
-##### 파일 관리(files.py)
+#### 파일 관리(files.py)
 - user_id별 file_id 반환: /files/ (POST)
 
-##### 오디오 처리(audio.py)
+#### 오디오 처리(audio.py)
 - 오디오 파일 업로드 및 처리: /audio/uploadfile/ (POST)
   - 녹음된 오디오 파일을 업로드 후 처리하는 로직
     - file_id, 로컬 file_path, S3 file_path 생성, S3, 로컬에 저장
@@ -18,7 +18,7 @@
     - 음성파일 naver clova에 전송
     - 메타데이터 supabase 적재
 
-##### STT 결과값 처리(stt.py)
+#### STT 결과값 처리(stt.py)
 - STT 결과값 후처리 tag:[update_results]
   - 파일별 오타를 한번에 처리: /stt/results/update_text/ (POST)
   - 파일별 발화자를 한번에 처리: /stt/results/update_speaker/ (POST)
