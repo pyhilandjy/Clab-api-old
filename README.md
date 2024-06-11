@@ -21,7 +21,7 @@
 #### 4. STT 결과값 처리(stt.py)
 - STT 결과값 후처리 tag:[update_results]
   - 파일별 오타를 한번에 처리: /stt/results/update_text/ (POST)
-  - 파일별 발화자를 한번에 처리: /stt/results/update_speaker/ (POST)
+  - 파일별 발화자를 한번에 처리: /stt/results/update_speaker/ (POST)
   - 파일별 행의 오타를 처리: /stt/results/update_text_edit/ (POST)
   - 파일별 선택한 행의 데이터를 복사하여 다음 행에 추가: /stt/results/posts/index_add_data/ (POST)
   - 파일별 선택한 행의 데이터를 삭제: /stt/results/index_delete_data/ (POST)
