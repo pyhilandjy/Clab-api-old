@@ -2,7 +2,7 @@
 
 ### 라우터 설명
 
-#### 유저 관리(users.py)
+#### - 유저 관리(users.py)
 - 유저의 목록 반환: /users/ (POST)
 - 로그인 하기 위한 정보 처리: /users/login/ (POST)
 - 로그인한 사용자의 정보를 반환: /users/me/ (GET)
